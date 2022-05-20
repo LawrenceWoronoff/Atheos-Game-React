@@ -1,10 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './component/Navbar';
+import Character from './component/Character';
+import Hero from './component/Hero';
+import Introduce from './component/Introduce';
+import Partnership from './component/Partnership';
+import DocSlider from './component/DocSlider';
+import Footer from './component/Footer';
+import SplitterUp from './component/SplitterUp';
+import SplitterDown from './component/SplitterDown';
+import MusicPlayer from './component/MusicPlayer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Navbar/>
+      <Character/>
+      <Hero/>
+      <SplitterDown/>
+      <Introduce/>
+      <SplitterUp/>
+      <DocSlider/>
+      <SplitterDown/>
+      <Partnership/>
+      <SplitterUp/>
+      <Footer/>
+      <MusicPlayer/>
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +39,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }

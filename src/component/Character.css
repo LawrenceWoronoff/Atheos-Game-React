@@ -1,0 +1,68 @@
+.chapterSection {
+    height: 100vh;
+}
+
+.playVideo {
+    animation-name: zoom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes zoom {
+    0%   {transform: scale(1.0);}
+    50%  {transform: scale(1.2);}
+    100% {transform: scale(1.0);}
+}
+
+.quote { 
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: capitalize;
+    opacity: 0;
+    animation: fadeIn-1 ease 8s;
+}
+/* .fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+} */
+@keyframes fadeIn-1{
+    0% {
+      opacity:0;
+    }
+    50% {
+      opacity:1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.quote-1 {
+    top:9%;
+    left: 18%;
+    animation-delay: 2s;
+}
+
+.quote-2 {
+    top:14%;
+    left:38%;   
+    animation-delay: 10s;
+}
+
+.quote-3 {
+    top: 61%;
+    left: 15%;
+    animation-delay: 18s;
+}
+
+.quote-4 {
+    top:67%;
+    left: 57%;
+    animation-delay: 26s;
+}

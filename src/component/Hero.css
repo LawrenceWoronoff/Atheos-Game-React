@@ -1,0 +1,59 @@
+.HeroCarousel {
+    height: 180px;
+    width: 50%;
+    top: calc(50% - 90px);
+    left: 25%;
+    background-size: contain;
+    
+}
+
+.carousel .slide .content {
+    transition: all .5s ease-in-out;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -45%;
+    width: 90%;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.25;
+    transition: opacity .35s ease-in-out
+} 
+
+.carousel.carousel-slider
+{
+    height: 60px ; 
+}
+
+.dot {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.carousel .control-prev.control-arrow {
+    left: 15px !important;
+}
+
+.carousel .control-next.control-arrow {
+    right: 15px !important;
+}
+
+.carousel-label{
+    color: #ffffff;
+    font-family: "Trojan Pro", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 20px;
+
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+
+    cursor: grab ;
+}
