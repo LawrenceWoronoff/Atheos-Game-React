@@ -6,34 +6,33 @@ import {useEffect, useRef} from "react";
 function Partnership() {
   const partnerShip = useRef();
   const partnerContent = useRef();
-  let initialPosY = 0;
-  let initialHeight = 0;
 
   useEffect(() => {
-    let pos = partnerShip.current.getBoundingClientRect()
-    initialPosY = pos.top;
-    initialHeight = pos.height;
-    // console.log(partnerShip.current.getBoundingClientRect());
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', updateSize);
   }, []);
 
   const handleScroll = () => {
-    const scrollOffsetY = window.pageYOffset;
-    // console.log(window.pageYOffset);
+    const partnerShipPositionTop = partnerShip.current.getBoundingClientRect().top;
+    const partnerShipHeight = partnerShip.current.getBoundingClientRect().height;
+    const labelHeight = 160;
 
-    // console.log("InitialPosY", initialPosY);
-    // console.log("initialHeight", initialHeight);
+    partnerContent.current.style.top = (partnerShipPositionTop  / 4 + partnerShipHeight / 2 - labelHeight / 2) + "px";
+  }
 
-    partnerContent.current.style.top = (initialHeight / 2 - (scrollOffsetY - initialPosY - initialHeight) / 2 - 115) + "px";
-    // console.log(window.pageYOffset);
+  const updateSize = () => {
+    const partnerShipPositionTop = partnerShip.current.getBoundingClientRect().top;
+    const partnerShipHeight = partnerShip.current.getBoundingClientRect().height;
+    const labelHeight = 160;
+
+    partnerContent.current.style.top = (partnerShipPositionTop  / 4 + partnerShipHeight / 2 - labelHeight / 2) + "px";
   }
 
   return (
-    <div className="Partnership position-relative" ref={partnerShip} style={{marginBottom: '-20px', height: '100vh'}}>
-      <img className="w-100 position-relative" src={SkyCity} alt = "Sky City"/>
+    <div className="Partnership position-relative" ref={partnerShip} style={{backgroundImage:`url(${SkyCity})`, height: '100vh'}}>
       <div className="position-absolute partnerContent" ref={partnerContent}>
-          <h1 className='sms-perrter text-white' style={{fontSize: '55px', marginBottom:'50px'}}>Partnerships</h1>
-          <h2 className='sms-perrter text-white' style={{fontSize: '40px'}}>To be Announced</h2>
+          <h1 className='sms-perrter text-white partner-label-1'>Partnerships</h1>
+          <h2 className='sms-perrter text-white partner-label-2'>To be Announced</h2>
       </div>
     </div>
   );

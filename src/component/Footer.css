@@ -1,3 +1,14 @@
+.Footer {
+    height: 100vh;
+    
+    background-image: url('../assets/FooterBack.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-container {
+    padding: 0% 8%;
+}
 .copyRight {
     border-style: dotted;
     border-width: 1px 0px 0px 0px;
@@ -79,4 +90,10 @@
 
 .subscribeInput::placeholder {
     color: #ccc;
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer-container{
+        padding: 0% 8%;
+    }
 }

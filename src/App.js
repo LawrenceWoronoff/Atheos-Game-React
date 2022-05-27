@@ -9,10 +9,12 @@ import Footer from './component/Footer';
 import SplitterUp from './component/SplitterUp';
 import SplitterDown from './component/SplitterDown';
 import MusicPlayer from './component/MusicPlayer'
+import VidoePopUp from './component/VidoePopUp'
 
 function App() {
   return (
     <div className="App">
+      <VidoePopUp/>
       <Navbar/>
       <Character/>
       <Hero/>

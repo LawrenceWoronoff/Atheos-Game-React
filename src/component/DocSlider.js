@@ -8,18 +8,17 @@ import { Carousel } from 'react-responsive-carousel';
 function DocSlider() {
   const [backgroundImage, setBackground] = useState(DocSliderOriginal);
   return (
-    <div className="DocSlider position-relative">
-        <img className="w-100 DocSliderBack" src={backgroundImage} alt="Doc Slider Original" />
+    <div className="DocSlider position-relative"  style={{ height:'110vh', backgroundImage:`url(${backgroundImage})`}}>
         <div className="position-absolute w-100 h-100 left-0 top-0">
-            <div className="row  w-100 h-100" style={{padding: '5%'}}>
-                <div className="col-md-8 col-sm-12">
+            <div className="row m-0 w-100 h-100" style={{padding: '3%'}}>
+                <div className="d-none d-md-block col-xl-8 col-md-6">
 
-                </div>
-                <div className="col-md-4 col-sm-12 DocSliderCarousel d-flex align-items-center" style={{backgroundColor: '#0201018A'}} 
+                </div>  
+                <div className="col-xl-4 col-md-6 col-xs-12 DocSliderCarousel d-flex align-items-center" style={{backgroundColor: '#0201018A'}} 
                      onMouseOver={() => {setBackground(DocSliderHover)}} 
                      onMouseLeave={() => {setBackground(DocSliderOriginal)}}>
                     <Carousel autoPlay={false} infiniteLoop={true} swipeable={true} emulateTouch={true} showArrows={true}  showStatus={false} showIndicators={false} showThumbs={false} interval={5000} transitionTime={1000}>
-                        <div className='text-white text-start' style={{margin: '0px 90px'}}>
+                        <div className='text-white text-start carousel-li-container' style={{height: '100%', display: 'flex', alignItems:'center', justifyContent:'center' }}>
                           <div>
                             <h1 className='sms-perrter doc-slider-header'>Governance</h1>
                             <p className='doc-slider-content'>
@@ -35,9 +34,8 @@ function DocSlider() {
                             </p>
                             <button className="slider-button">Governance Doc</button>
                           </div>
-                          
                         </div>
-                        <div className='text-white text-start' style={{margin: '0px 90px'}}>
+                        <div className='text-white text-start carousel-li-container' style={{height: '100%', display: 'flex', alignItems:'center', justifyContent:'center' }}>
                           <div>
                             <h1 className='sms-perrter doc-slider-header'>Economy</h1>
                             <p className='doc-slider-content'>
@@ -55,8 +53,8 @@ function DocSlider() {
                             </p>
                             <button className="slider-button">Tokenomics Doc</button>
                           </div>
-                          
-                        </div><div className='text-white text-start' style={{margin: '0px 90px'}}>
+                        </div>
+                        <div className='text-white text-start carousel-li-container' style={{height: '100%', display: 'flex', alignItems:'center', justifyContent:'center' }}>
                           <div>
                             <h1 className='sms-perrter doc-slider-header'>The Game</h1>
                             <p className='doc-slider-content'>
@@ -73,7 +71,6 @@ function DocSlider() {
                             </p>
                             <button className="slider-button">Game Design Doc</button>
                           </div>
-                          
                         </div>
                     </Carousel>
                 </div>
