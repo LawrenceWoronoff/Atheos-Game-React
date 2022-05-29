@@ -6,14 +6,6 @@
 
 }
 
-.doc-back-1 {
-    background-image: url('../assets/DocSliderOrg.png');
-}
-
-.doc-back-2 {
-    background-image: url('../assets/DocSliderHover.png');
-}
-
 .DocSliderCarousel .carousel-root {
     width: 100%;
 }

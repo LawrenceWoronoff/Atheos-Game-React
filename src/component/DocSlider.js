@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 function DocSlider() {
-  const [backgroundImage, setBackground] = useState(DocSliderOriginal);
+  const [backgroundImage, setBackground] = useState('backgrounds/DocSliderOrg.png');
   return (
     <div className="DocSlider position-relative"  style={{ height:'110vh', backgroundImage:`url(${backgroundImage})`}}>
         <div className="position-absolute w-100 h-100 left-0 top-0">
@@ -15,8 +15,9 @@ function DocSlider() {
 
                 </div>  
                 <div className="col-xl-4 col-md-6 col-xs-12 DocSliderCarousel d-flex align-items-center" style={{backgroundColor: '#0201018A'}} 
-                     onMouseOver={() => {setBackground(DocSliderHover)}} 
-                     onMouseLeave={() => {setBackground(DocSliderOriginal)}}>
+                     onMouseOver={() => {setBackground('backgrounds/DocSliderHover.png')}} 
+                     onMouseLeave={() => {setBackground('backgrounds/DocSliderOrg.png')}} 
+                     >
                     <Carousel autoPlay={false} infiniteLoop={true} swipeable={true} emulateTouch={true} showArrows={true}  showStatus={false} showIndicators={false} showThumbs={false} interval={5000} transitionTime={1000}>
                         <div className='text-white text-start carousel-li-container' style={{height: '100%', display: 'flex', alignItems:'center', justifyContent:'center' }}>
                           <div>
