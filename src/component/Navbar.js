@@ -1,7 +1,8 @@
 import './Navbar.css';
-import {useState, useEffect, useRef} from "react";
+import {useState, useEffect} from "react";
 import hamburgerOpen from "../assets/HamburgerOpen.png";
 import hamburgerClose from "../assets/HamburgerClose.png";
+import {NavLink, Link} from 'react-router-dom';
 
 import {BsCaretDownFill} from "react-icons/bs";
 
@@ -31,7 +32,9 @@ function Navbar() {
                 <li className="dropdown_item-1">Tokenomics</li>
                 <li className="dropdown_item-2">Token supply</li>
                 <li className="dropdown_item-3">Governance</li>
+                <Link to="/contributors">
                 <li className="dropdown_item-4">Team</li>
+                </Link>
               </ul>
             </li>
             <li className="dropdown dropdown-6">

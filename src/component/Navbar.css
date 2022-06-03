@@ -136,6 +136,9 @@
     background-color: #41201345;
 
   }
+  .dropdown_menu a {
+	  text-decoration: none;
+  }
   .dropdown:hover .dropdown_menu--animated {
 	display: block;
   }

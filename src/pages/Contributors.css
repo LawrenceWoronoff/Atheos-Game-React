@@ -25,7 +25,8 @@
 .gradient-header-spliter {
     width: 50%;
     margin: 0px auto;
-    border-image-slice: 1;
+    border-top: solid 3px white;
+    /* border-image-slice: 1;
     border-bottom: 0px;
     border-image-source: linear-gradient(270deg, rgba(9, 228, 97, 0) 0%, rgb(206, 239, 0) 17.19%, rgb(81, 249, 128) 34.38%, rgb(45, 81, 237) 50%, rgb(0, 96, 241) 67.19%, rgb(241, 0, 217) 83.33%, rgba(45, 73, 85, 0) 99.75%);
 
@@ -38,7 +39,7 @@
     border-right-style: inset;
     border-right-width: 1px;
     border-top-style: inset;
-    border-top-width: 1px;
+    border-top-width: 1px; */
 }
 .avatar-section {
     list-style-type: none;

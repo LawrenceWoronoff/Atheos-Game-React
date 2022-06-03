@@ -36,7 +36,7 @@ function AvatarCodeBlock({gradientType, imageHide, avatar, fullName, position, r
   }, [])
   return (
     <li className="AvatarCodeBlock">
-      <div className={`gradient-block gradient-hover-${gradientType}`}>
+      <div className={`gradient-block gradient-hover`}>
         <div className="card__container card-container--is-highlighted">
           {
             !imageHide &&
