@@ -49,7 +49,8 @@ function AvatarCodeBlock({gradientType, imageHide, avatar, fullName, position, r
             <p className='avatar-name'>{fullName}</p>
             <p className='avatar-role'>{position}</p>
             <div className='avatar-footer'>
-              <span className={`badge ${badge}`}>{role}</span>
+              {/* <span className={`badge ${badge}`}>{role}</span> */}
+              <div></div>
               <div className="social-container">
                 {
                   twitter &&

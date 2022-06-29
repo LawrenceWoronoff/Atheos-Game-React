@@ -303,11 +303,13 @@
 	height: 100%;
 	padding-left: 0px;
 	overflow-y: auto;
+	list-style-type: none;
+	padding: 0 0 0 45px;
   }
   .nav-mobile .m-menu ul li a, .nav-mobile .m-menu ul li label {
 	display: block;
 	text-align: left;
-	padding: 0 45px;
+	/* padding: 0 45px; */
 	line-height: 47px;
 	text-decoration: none;
 	cursor: pointer;

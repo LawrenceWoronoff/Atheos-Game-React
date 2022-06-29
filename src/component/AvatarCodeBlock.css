@@ -101,6 +101,7 @@
 .avatar-footer {
     display: flex;
     justify-content: space-between;
+    min-height: 24px;
 }
 .social-container a {
     color: rgb(158, 158, 158);

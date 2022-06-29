@@ -87,10 +87,10 @@ function Navbar() {
                       <span>Whitepaper</span>
                     </div>
                     <ul>
-                      <li><label>Tokenomics</label></li>
-                      <li><label>Token supply</label></li>
-                      <li><label>Governance</label></li>
-                      <li><label>Team</label></li>
+                      <Link to="/"><li><label>Tokenomics</label></li></Link>
+                      <Link to="/"><li><label>Token supply</label></li></Link>
+                      <Link to="/"><li><label>Governance</label></li></Link>
+                      <Link to="/contributors"><li><label>Team</label></li></Link>
                     </ul>
                   </div>
                 </li>
