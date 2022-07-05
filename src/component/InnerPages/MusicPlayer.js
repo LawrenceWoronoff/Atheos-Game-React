@@ -1,16 +1,16 @@
 import './MusicPlayer.css';
 import {useState, useEffect, useRef} from "react";
-import musicBoy from "../assets/musicBoy.png";
-import musicPlayerBack from "../assets/musicPlayerBack.png";
-import musicPlayerBackSmall from "../assets/musicPlayerBackSmall.png";
+import musicBoy from "../../assets/musicBoy.png";
+import musicPlayerBack from "../../assets/musicPlayerBack.png";
+import musicPlayerBackSmall from "../../assets/musicPlayerBackSmall.png";
 import {FaStepBackward, FaPlay, FaPause, FaStepForward} from "react-icons/fa";
 import {BiCollapse} from "react-icons/bi";
 import {FaMusic} from "react-icons/fa";
 
-import musicPrevBtn from "../assets/Music_previous.png";
-import musicPlayBtn from "../assets/Music_Play.png";
-import musicPauseBtn from "../assets/Music_pause.png";
-import musicNextBtn from "../assets/Music_next.png";
+import musicPrevBtn from "../../assets/Music_previous.png";
+import musicPlayBtn from "../../assets/Music_Play.png";
+import musicPauseBtn from "../../assets/Music_pause.png";
+import musicNextBtn from "../../assets/Music_next.png";
 
 
 function MusicPlayer() {

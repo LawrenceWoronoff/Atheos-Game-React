@@ -1,5 +1,5 @@
 import './Introduce.css';
-import introduceVideo from "../assets/introduce.mp4";
+import introduceVideo from "../../assets/introduce.mp4";
 
 function Introduce() {
   return (
@@ -14,9 +14,9 @@ function Introduce() {
         <div className="introduceSection d-flex align-items-center h-100" style={{padding: '5%'}}>
           <div className="row w-100 introduce-text-container">
             <div className=" text-start">
-              <h2 className="sms-perrter text-white p_12">
+              <h2 className="sms-perrter text-white p_12" style={{marginBottom: '30px'}}>
                 <span>Introducing "</span>
-                <span style={{color: '#D9A627'}}>ICE</span>":<br/>
+                <span style={{color: '#D9A627'}}>ICE</span>":<br/><br/>
                 <span style={{color: '#D9A627'}}>I</span>TEM <span style={{color: '#D9A627'}}>C</span>REATION <span style={{color: '#D9A627'}}>E</span>NGINE 
               </h2>
               <p className="sms-perrter fw-light p_8">

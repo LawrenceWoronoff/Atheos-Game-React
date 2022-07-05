@@ -140,7 +140,7 @@
         width: 100%;
         height: 100vh;
         padding: 0px;
-        background-image: url('../assets/MobileCharacterBack.jpg');
+        background-image: url('../../assets/MobileCharacterBack.jpg');
         background-size: cover;
         background-position: center center;
     }

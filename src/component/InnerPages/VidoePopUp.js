@@ -1,9 +1,9 @@
 import './VideoPopUp.css';
 import {useState, useEffect, useRef} from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import videoFile from "../assets/Atheos-2022.mp4";
+import videoFile from "../../assets/Atheos-2022.mp4";
 import { useSelector, useDispatch } from 'react-redux';
-import { videoActions } from '../_actions';
+import { videoActions } from '../../_actions';
 
 function VidoePopUp() {
   const {video_open} = useSelector((state) => state.rootReducer.chracter_reducer);

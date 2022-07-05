@@ -1,5 +1,5 @@
 import './Hero.css';
-import carouselBox from "../assets/Carrusel-Box.png";
+import carouselBox from "../../assets/Carrusel-Box.png";
 import {useEffect, useRef} from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader

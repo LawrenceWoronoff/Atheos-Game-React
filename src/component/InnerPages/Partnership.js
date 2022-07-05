@@ -1,5 +1,5 @@
 import './Partnership.css';
-import SkyCity from "../assets/SkyCity.jpg";
+import SkyCity from "../../assets/SkyCity.jpg";
 import {useEffect, useRef} from "react";
 
 

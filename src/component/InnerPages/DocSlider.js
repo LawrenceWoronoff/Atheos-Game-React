@@ -1,6 +1,4 @@
 import './DocSlider.css';
-import DocSliderOriginal from "../assets/DocSliderOrg.png";
-import DocSliderHover from "../assets/DocSliderHover.png";
 import {useState} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';

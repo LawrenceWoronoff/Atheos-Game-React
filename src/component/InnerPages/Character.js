@@ -1,13 +1,13 @@
 import './Character.css';
-import characterVideo from "../assets/Character.webm";
-import commanderVideo from "../assets/commander.webm";
-import logoHero from "../assets/Logo.webp";
-import hoverText from "../assets/HoverText.png";
-import hoverTextSM from "../assets/HoverTextSM.png";
+import characterVideo from "../../assets/Character.webm";
+import commanderVideo from "../../assets/commander.webm";
+import logoHero from "../../assets/Logo.webp";
+import hoverText from "../../assets/HoverText.png";
+import hoverTextSM from "../../assets/HoverTextSM.png";
 
-import playVideo from "../assets/playVideo.png";
+import playVideo from "../../assets/playVideo.png";
 import {useState} from "react";
-import { videoActions } from '../_actions';
+import { videoActions } from '../../_actions';
 import { useDispatch } from 'react-redux';
 
 function Character() {

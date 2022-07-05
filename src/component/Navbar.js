@@ -29,7 +29,9 @@ function Navbar() {
             <li className="dropdown dropdown-6">
               Whitepaper<span className='ms-2'><BsCaretDownFill/></span>
               <ul className="dropdown_menu dropdown_menu--animated dropdown_menu-6">
+                <Link to="/entire">
                 <li className="dropdown_item-1">Tokenomics</li>
+                </Link>
                 <li className="dropdown_item-2">Token supply</li>
                 <li className="dropdown_item-3">Governance</li>
                 <Link to="/contributors">
@@ -70,7 +72,7 @@ function Navbar() {
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                   </svg>
                 </label>
-                <span>Home</span>
+                <span></span>
               </div>
               <ul>
                 <li><label>Game Settings</label></li>

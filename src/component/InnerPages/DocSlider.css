@@ -95,7 +95,7 @@
 @media only screen and (max-width: 1024px) {
     
     .DocSlider {
-        background-image: url('../assets/DocSliderOrg.png') !important;
+        background-image: url('../../assets/DocSliderOrg.png') !important;
     }
 
     .carousel-li-container{
